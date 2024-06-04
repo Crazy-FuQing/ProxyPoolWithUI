@@ -31,19 +31,19 @@
 
 | 名称         | 地址                           |备注          |
 |--------------|-------------------------------|-------------|
-| 悠悠网络代理   | https://uu-proxy.com/         |              |
-| 快代理       | https://www.kuaidaili.com/     |              |
-| 全网代理     | http://www.goubanjia.com/      |              |
-| 66代理       | http://www.66ip.cn/            |              |
-| 云代理       | http://www.ip3366.net/         |              |
-| 免费代理库   | https://ip.jiangxianli.com/     |              |
-| 小幻HTTP代理 | https://ip.ihuan.me/            |              |
-| 89免费代理   | https://www.89ip.cn/            |              |
-| ProxyScan   | https://www.proxyscan.io/      |              |
-| 开心代理     | http://www.kxdaili.com/         |              |
-| 西拉代理     | http://www.xiladaili.com/       |              |
-| 小舒代理     | http://www.xsdaili.cn/          |              |
-| ProxyList   | https://www.proxy-list.download/|              |
+| 悠悠网络代理   | https://uu-proxy.com/         |      已失效        |
+| 快代理       | https://www.kuaidaili.com/     |由 Tencent Cloud EdgeOne 提供防护 |
+| 全网代理     | http://www.goubanjia.com/      |     已失效         |
+| 66代理       | http://www.66ip.cn/            |        已修复     |
+| 云代理       | http://www.ip3366.net/         |       正常       |
+| 免费代理库   | https://ip.jiangxianli.com/     |      已失效        |
+| 小幻HTTP代理 | https://ip.ihuan.me/            |       已失效       |
+| 89免费代理   | https://www.89ip.cn/            |      正常        |
+| ProxyScan   | https://www.proxyscan.io/      |        已失效      |
+| 开心代理     | http://www.kxdaili.com/         |     正常         |
+| 西拉代理     | http://www.xiladaili.com/       |      已失效       |
+| 小舒代理     | http://www.xsdaili.cn/          |       已失效       |
+| ProxyList   | https://www.proxy-list.download/|       正常       |
 | ProxyScrape | https://proxyscrape.com/        |国内无法直接访问 |
 
 ## 运行本项目
