@@ -18,6 +18,7 @@ from .XiLaFetcher import XiLaFetcher
 from .XiaoShuFetcher import XiaoShuFetcher
 from .ProxyListFetcher import ProxyListFetcher
 from .ProxyScrapeFetcher import ProxyScrapeFetcher
+from .LocalFetcher import LocalFetcher
 
 fetchers = [
     Fetcher(name='uu-proxy.com', fetcher=UUFetcher),
@@ -33,5 +34,6 @@ fetchers = [
     Fetcher(name='www.xiladaili.com', fetcher=XiLaFetcher),
     Fetcher(name='www.xsdaili.cn', fetcher=XiaoShuFetcher),
     Fetcher(name='www.proxy-list.download', fetcher=ProxyListFetcher),
-    Fetcher(name='proxyscrape.com', fetcher=ProxyScrapeFetcher)
+    Fetcher(name='proxyscrape.com', fetcher=ProxyScrapeFetcher),
+    Fetcher(name='Local', fetcher=LocalFetcher)
 ]

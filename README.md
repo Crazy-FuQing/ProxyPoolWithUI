@@ -103,15 +103,33 @@ docker run -p 5000:5000 -v /root/ProxyPoolWithUI:/proxy -d proxy_pool
 
 项目启动之后，会自动爬取并检测代理是否可用，因此我们只需要关注如何使用代理即可。
 
-* `http://localhost:5000/fetch_random` : 随机获取一个可用代理，如果没有可用代理则返回空白
-  
+| 方法              | 请求模式 | 作用                                             | 返回值                                                |
+| ----------------- | -------- | ------------------------------------------------ | ----------------------------------------------------- |
+| /ping             | GET      | 可用于测试API状态                                | 'APIOK'                                               |
+| /fetch_random     | GET      | 随机获取一个可用代理，如果没有可用代理则返回空白 | '{p.protocol}://{p.ip}:{p.port}'                      |
+| /fetch_http       | GET      | 获取协议为http的一条结果                         | '{p.protocol}://{p.ip}:{p.port}'                      |
+| /fetch_http_all   | GET      | 获取协议为http的全部结果                         | '{p.protocol}://{p.ip}:{p.port}'                      |
+| /fetch_https      | GET      | 获取协议为https的一条结果                        | '{p.protocol}://{p.ip}:{p.port}'                      |
+| /fetch_https_all  | GET      | 获取协议为https的全部结果                        | '{p.protocol}://{p.ip}:{p.port}'                      |
+| /fetch_socks4     | GET      | 获取协议为socks4的一条结果                       | '{p.protocol}://{p.ip}:{p.port}'                      |
+| /fetch_socks4_all | GET      | 获取协议为socks4的全部结果                       | '{p.protocol}://{p.ip}:{p.port}'                      |
+| /fetch_socks5     | GET      | 获取协议为socks5的一条结果                       | '{p.protocol}://{p.ip}:{p.port}'                      |
+| /fetch_all        | GET      | 获取所有可用代理，如果没有可用代理则返回空白     | [('http','127.0.0.1',8080),('http','127.0.0.1',1234)] |
+| /fetch_socks5_all | GET      | 获取协议为socks5的全部结果                    | '{p.protocol}://{p.ip}:{p.port}'                      |
+
+
+
+1. `http://localhost:5000/fetch_random` : 随机获取一个可用代理，如果没有可用代理则返回空白
+
   返回示例 : `http://127.0.0.1:8080`
 
-* `http://localhost:5000/fetch_all` : 获取所有可用代理，如果没有可用代理则返回空白
-  
+2. `http://localhost:5000/fetch_all` : 获取所有可用代理，如果没有可用代理则返回空白
+
   返回示例 : `http://127.0.0.1:8080,http://127.0.0.1:8081`
 
-1. 使用代理
+  
+
+  使用代理
 
 不同语言使用代理的方式各不相同，这里提供一个Python集成本项目并使用代理的示例代码：
 
