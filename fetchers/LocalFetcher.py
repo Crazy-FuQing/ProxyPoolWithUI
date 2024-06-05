@@ -17,7 +17,7 @@ class LocalFetcher(BaseFetcher):
 
         proxies = []
 
-        # https代理 高级匿名代理ip提取
+        # 读取本地代理文件
         html = requests.get('http://192.168.1.143/proxypool.txt',  timeout=10).text
         # print(html.split('\r\n'))
         proxy_list = html.split('\r\n')
