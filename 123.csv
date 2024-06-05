@@ -1,0 +1,10 @@
+/ping,GET,可用于测试API状态,'APIOK'
+/fetch_random,GET,?随机获取一个可用代理，如果没有可用代理则返回空白,'{p.protocol}://{p.ip}:{p.port}'
+/fetch_http,GET,api获取协议为http的一条结果,'{p.protocol}://{p.ip}:{p.port}'
+/fetch_http_all,GET,api获取协议为http的全部结果,'{p.protocol}://{p.ip}:{p.port}'
+/fetch_https,GET,api获取协议为https的一条结果,'{p.protocol}://{p.ip}:{p.port}'
+/fetch_https_all,GET,api获取协议为https的全部结果,'{p.protocol}://{p.ip}:{p.port}'
+/fetch_socks4,GET,api获取协议为http的一条结果,'{p.protocol}://{p.ip}:{p.port}'
+/fetch_socks4_all,GET,api获取协议为http的全部结果,'{p.protocol}://{p.ip}:{p.port}'
+/fetch_socks5,GET,api获取协议为https的一条结果,'{p.protocol}://{p.ip}:{p.port}'
+/fetch_all,GET,获取所有可用代理，如果没有可用代理则返回空白,"[('http','127.0.0.1',8080),('http','127.0.0.1',1234)]"
