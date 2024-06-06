@@ -13,14 +13,21 @@
 * 集成WEB管理界面，方便查看代理状态并对代理池进行配置
 * 拥有详细的注释，可以非常方便地学习或修改
 
+## todo
+
+- 存储方式改用mysql
+- 数据库增加代理位置字段
+
 推荐:
 * [HTTP代理原理](https://zhuanlan.zhihu.com/p/349028243)
 
-项目Demo：[http://chenyu0x00.com:8888/](http://chenyu0x00.com:8888/)
+项目Demo：[http://chenyu0x00.com:8888/](http://chenyu0x00.com:8888/)  已失效 
 
 **2021年3月8日测试，项目运行半小时后，支持访问HTTPS的代理有40+，支持访问HTTP的代理有100+。**
 
 如果你知道有好用的代理源，或者是发现本项目存在一些问题，欢迎通过Issues和我们讨论。
+
+
 
 ## WEB管理界面截图
 
@@ -31,20 +38,33 @@
 
 | 名称         | 地址                           |备注          |
 |--------------|-------------------------------|-------------|
-| 悠悠网络代理   | https://uu-proxy.com/         |      已失效        |
-| 快代理       | https://www.kuaidaili.com/     |由 Tencent Cloud EdgeOne 提供防护 |
-| 全网代理     | http://www.goubanjia.com/      |     已失效         |
-| 66代理       | http://www.66ip.cn/            |        已修复     |
-| 云代理       | http://www.ip3366.net/         |       正常       |
-| 免费代理库   | https://ip.jiangxianli.com/     |      已失效        |
-| 小幻HTTP代理 | https://ip.ihuan.me/            |       已失效       |
-| 89免费代理   | https://www.89ip.cn/            |      正常        |
-| ProxyScan   | https://www.proxyscan.io/      |        已失效      |
-| 开心代理     | http://www.kxdaili.com/         |     正常         |
-| 西拉代理     | http://www.xiladaili.com/       |      已失效       |
-| 小舒代理     | http://www.xsdaili.cn/          |       已失效       |
-| ProxyList   | https://www.proxy-list.download/|       正常       |
-| ProxyScrape | https://proxyscrape.com/        |国内无法直接访问 |
+| 云代理            | http://www.ip3366.net/                                       | 正常           |
+| 89免费代理        | https://www.89ip.cn/                                         | 正常           |
+| 开心代理          | http://www.kxdaili.com/                                      | 正常           |
+| ProxyList         | https://www.proxy-list.download/                             | 正常           |
+| ProxyScrape       | https://proxyscrape.com/                                     | 正常           |
+| proxydb.net       | https://proxydb.net/?protocol=https&protocol=http&protocol=socks5&protocol=socks4&anonlvl=4&anonlvl=3&anonlvl=2&anonlvl=1 | 有反爬         |
+| 站大爷            | https://www.zdaye.com/free/2/                                | 有反爬         |
+| 66代理            | http://www.66ip.cn/                                          | 已修复         |
+| 快代理            | https://www.kuaidaili.com/                                   | 已失效 有waf   |
+| 悠悠网络代理      | https://uu-proxy.com/                                        | 已失效         |
+| 全网代理          | http://www.goubanjia.com/                                    | 已失效         |
+| 免费代理库        | https://ip.jiangxianli.com/                                  | 已失效         |
+| 小幻HTTP代理      | https://ip.ihuan.me/                                         | 已失效         |
+| ProxyScan         | https://www.proxyscan.io/                                    | 已失效         |
+| 西拉代理          | http://www.xiladaili.com/                                    | 已失效         |
+| 小舒代理          | http://www.xsdaili.cn/                                       | 已失效         |
+| 泥马代理          | http://www.nimadaili.com/                                    | 已失效         |
+| openproxylist.xyz | https://openproxylist.xyz/                                   | 待实现 备注txt |
+| 芝麻代理          | https://free.zmhttp.com/1/                                   | 待实现         |
+| free-proxy.cz     | http://free-proxy.cz/en/proxylist/country/all/all/ping/all   | 待实现         |
+| 敲代码代理IP      | https://ip.uqidata.com/free/index.html                       | 待实现         |
+| 69ip              | https://www.69ip.cn/?page=3                                  | 待实现         |
+| 齐云代理          | https://proxy.ip3366.net/free/                               | 待实现         |
+| 冰凌代理          | https://www.binglx.cn/                                       | 待实现         |
+| 太阳HTTP          | http://ip.tyhttp.com/                                        | 待实现         |
+| hidemy.io         | https://hidemy.io/cn/proxy-list/?maxtime=200&start=64#list   | 待实现         |
+
 
 ## 运行本项目
 
